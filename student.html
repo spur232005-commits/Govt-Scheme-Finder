@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Scholarships</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header><h1>Student Scholarship Eligibility</h1></header>
+
+<div class="form-container">
+
+<label>Course:</label>
+<select id="course">
+<option>PUC</option>
+<option>Diploma</option>
+<option>Degree</option>
+<option>Engineering</option>
+<option>Post Graduation</option>
+</select>
+
+<label>Annual Income:</label>
+<input type="number" id="income">
+
+<label>Category:</label>
+<select id="category">
+<option>General</option>
+<option>OBC</option>
+<option>SC</option>
+<option>ST</option>
+<option>Minority (Jain/Sikh/Muslim/Christian)</option>
+</select>
+
+<label>Gender:</label>
+<select id="gender">
+<option>Male</option>
+<option>Female</option>
+<option>Other</option>
+</select>
+
+<label>Percentage (%):</label>
+<input type="number" id="marks">
+
+<label>Age:</label>
+<input type="number" id="age">
+
+<label>State:</label>
+<select id="state">
+<option>Karnataka</option>
+<option>Other</option>
+</select>
+
+<button onclick="checkScholarship()">Check Eligibility</button>
+
+<div class="result-box">
+<p id="result"></p>
+</div>
+
+<button onclick="location.href='index.html'" class="back-btn">Back</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
